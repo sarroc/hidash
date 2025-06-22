@@ -8,5 +8,14 @@ module.exports = {
         for (let index in arr) {
             func(arr[index], index);
         }
+     },
+     map(arr, func) {
+        const result = [];
+
+        for (let i = 1; i < arr.length; i++) {
+            result.push(func(arr[i], i));
+        }
+
+        return result;
      }
 };
