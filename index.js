@@ -12,7 +12,7 @@ module.exports = {
      map(arr, func) {
         const result = [];
 
-        for (let i = 1; i < arr.length; i++) {
+        for (let i = 0; i < arr.length; i++) {
             result.push(func(arr[i], i));
         }
 
