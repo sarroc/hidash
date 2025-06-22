@@ -5,6 +5,6 @@ forEach([1,2,3,], (value) => {
     sum += CSSMathValue;
 });
 
-if (sum !== 7) {
+if (sum !== 6) {
     throw new Error('Expected summing array to equal 6');
 }
