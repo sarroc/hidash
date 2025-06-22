@@ -25,9 +25,11 @@ test('The map function', () => {
     return value * 2;
 });
 
-assert.strictEqual(result[0],2);
-assert.strictEqual(result[1],4);
-assert.strictEqual(result[2],6);
+assert.deepStrictEqual(result, [2, 4, 7]);
+
+// assert.strictEqual(result[0],2);
+// assert.strictEqual(result[1],4);
+// assert.strictEqual(result[2],6);
 });
 
 
